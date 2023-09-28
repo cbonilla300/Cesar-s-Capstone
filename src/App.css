@@ -1,4 +1,5 @@
 #root {
+  
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -6,25 +7,69 @@
 }
 
 body {
-  display: flex;
   background-color: greenyellow;
 }
 
-.base {
-  display: flexbox;
-}
+
 .search_box {
-  display: flexbox;
+  display: flex;
   float: right;
   padding: 10px;
-  
-  
+}
 
+h1 {
+  color: gray;
 }
 
 .icon {
-  display: flexbox;
+  display: flex;
   float: left;
-  
+  margin-left: 20px;
   color: #f3b123;
 }
+
+/* .item {
+  display: flex;
+  justify-content: space-between;
+} */
+
+img {
+  display: flex;
+  margin-left: 500px;
+  width: 200px;
+  border: solid black 10px;
+ 
+}
+
+ p {
+  display: flex;
+  text-align: left;
+  
+ } 
+
+
+h1 {
+  color: black;
+  margin-top: 50px;
+}
+
+
+
+.name {
+  margin-right: 50px;
+}
+select {
+  display: flex;
+  margin-left: 585px;
+
+}
+
+.add {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+/* .sort {
+  display: flex;
+  justify-content: space-evenly;
+} */
