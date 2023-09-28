@@ -70,10 +70,14 @@ products.map((product) => {
     <div className='items' key={product.id}>
       <button className='add' onClick={() => AddItem(product)} type='text' placeholder='Add item'>Add Item</button>
       {/* <button className='remove' onClick={() => RemoveItem(product)} type='text' placeholder='Remove item'>Remove Item</button> */}
+      
       <h3>{ product.title }</h3>
+      <div  className='description'>
       <p>{ product.description }</p>
       <p>${ product.price }</p>
+      </div>
       <img src={product.image}/>
+      
       </div>
   )
 }

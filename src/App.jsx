@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Nav from './Nav'
-import LoginForm from './Login'
+// import Nav from './Nav'
+import Login from './Login'
 import Register from './Register'
 import ProductItems from './ProductItems'
 import ViewProducts from './ViewProducts'
@@ -14,12 +14,9 @@ function App() {
    
   return(
     <>
-     <Nav>
-        <Link to={ProductItems} path='productitems'>Home</Link>
-        <Link to={Register} path='register'>Register</Link>
-        <Link to={LoginForm} path= 'loginform'>Login</Link>
+     
       
-    </Nav> 
+    
     
     <BrowserRouter>
       <Routes>
@@ -27,23 +24,30 @@ function App() {
         <Route path='cart' element={<Cart/>}>Cart</Route>
         <Route path='/' element={<ViewProducts/>}>View Products</Route>
         <Route path='register' element={<Register/>}>Register</Route>
-        
+        <Route path='login' element={<Login/>}>Login</Route>
         
       </Routes>
+
+      <div className='links'>
+        <Link to='register'>Register</Link>
+        <Link to='login'>Login</Link> 
+      </div>
+
     </BrowserRouter>
+
+    {/* <Login/> */}
+    
+
+    
     
       {/* <Nav/>
      <ProductItems/> 
     {/* <ViewProducts/>  */}
-    
-   
-      
-    
-    
 
     
     </>
   )
+ 
 
 }
 

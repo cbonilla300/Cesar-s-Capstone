@@ -10,7 +10,7 @@ const LoginForm = () => {
       };
       return (
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className='username'>
             <label htmlFor="username">Username:</label>
             <input
               type="text"
@@ -19,7 +19,7 @@ const LoginForm = () => {
               onChange={(event) => setUsername(event.target.value)}
             />
           </div>
-          <div>
+          <div className='password'>
             <label htmlFor="password">Password:</label>
             <input
               type="password"
@@ -28,7 +28,7 @@ const LoginForm = () => {
               onChange={(event) => setPassword(event.target.value)}
             />
           </div>
-          <button type="submit">Submit</button>
+          <button className='sign-in' type="submit">Sign In</button>
         </form>
       );
 

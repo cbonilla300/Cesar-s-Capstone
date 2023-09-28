@@ -28,22 +28,26 @@ h1 {
   color: #f3b123;
 }
 
-/* .item {
+ .item {
   display: flex;
   justify-content: space-between;
-} */
-
+} 
+ 
 img {
-  display: flex;
-  margin-left: 500px;
+  display: grid;
+  margin-left: 700px;
   width: 200px;
   border: solid black 10px;
+  margin-bottom: 30px;
  
-}
+} 
 
- p {
-  display: flex;
-  text-align: left;
+ .description {
+ display: grid;
+ text-align: left;
+ justify-content: left;
+ width: 500px;
+ margin-top: 30px;
   
  } 
 
@@ -60,7 +64,7 @@ h1 {
 }
 select {
   display: flex;
-  margin-left: 585px;
+  margin-left: 425px;
 
 }
 
@@ -73,3 +77,21 @@ select {
   display: flex;
   justify-content: space-evenly;
 } */
+
+.links {
+  display: flex;
+  margin-left: 400px;
+  margin-right: 400px;
+  justify-content: space-between;
+  color: red;
+}
+
+.username {
+  margin-bottom: 10px;
+  
+}
+
+.sign-in {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

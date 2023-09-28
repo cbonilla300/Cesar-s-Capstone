@@ -41,6 +41,7 @@ const Cart = () => {
                                 <div>
                                     <p>ProductId: {product.productId}</p>
                                     <p>Quantity: {product.quantity}</p>
+                                    <p>Subtotal = {cart.reduce((sum, item, quantity) => sum + item.price * item.quantity, 0 )} <button className='checkout' >CHECKOUT</button></p>
                                 </div>
                             )
                         })}

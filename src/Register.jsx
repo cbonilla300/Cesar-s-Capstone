@@ -19,34 +19,34 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         //register logic to send to api
-        fetch('https://fakestoreapi.com/users',{
-            method:"POST",
-            body:JSON.stringify(
-                {
-                    email:'John@gmail.com',
-                    username:'johnd',
-                    password:'m38rmF$',
-                    name:{
-                        firstname:'John',
-                        lastname:'Doe'
-                    },
-                    address:{
-                        city:'kilcoole',
-                        street:'7835 new road',
-                        number:3,
-                        zipcode:'12926-3874',
-                        geolocation:{
-                            lat:'-37.3159',
-                            long:'81.1496'
-                        }
-                    },
-                    phone:'1-570-236-7033'
-                }
-            )
-        })
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-        console.log('Form submitted', formData)
+        // fetch('https://fakestoreapi.com/users',{
+        //     method:"POST",
+        //     body:JSON.stringify(
+        //         {
+        //             email:'John@gmail.com',
+        //             username:'johnd',
+        //             password:'m38rmF$',
+        //             name:{
+        //                 firstname:'John',
+        //                 lastname:'Doe'
+        //             },
+        //             address:{
+        //                 city:'kilcoole',
+        //                 street:'7835 new road',
+        //                 number:3,
+        //                 zipcode:'12926-3874',
+        //                 geolocation:{
+        //                     lat:'-37.3159',
+        //                     long:'81.1496'
+        //                 }
+        //             },
+        //             phone:'1-570-236-7033'
+        //         }
+        //     )
+        // })
+        //     .then(res=>res.json())
+        //     .then(json=>console.log(json))
+        // console.log('Form submitted', formData)
     }
 
     return (
@@ -55,7 +55,7 @@ const Register = () => {
             <form onSubmit={{handleSubmit}}></form>
               <div>
                 <label htmlFor="firstName">First Name:</label>
-                <input
+                <input className="first-name"
                 type="text"
                 id="firstName"
                 name="firstName"
@@ -65,7 +65,7 @@ const Register = () => {
               </div>
               <div>
                 <label htmlFor="lastName">Last Name:</label>
-                <input
+                <input className="last-name"
                 type="text"
                 id="lastName"
                 name="lastName"
@@ -75,7 +75,7 @@ const Register = () => {
               </div>
               <div>
                 <label htmlFor="email">Email:</label>
-                <input
+                <input className="email"
                 type="email"
                 id="email"
                 name="email"
@@ -85,7 +85,7 @@ const Register = () => {
               </div>
               <div>
                 <label htmlFor="password">Password:</label>
-                <input
+                <input className="password"
                 type="password"
                 id="password"
                 name="password"
