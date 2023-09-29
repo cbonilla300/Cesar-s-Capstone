@@ -24,15 +24,17 @@ function App() {
         <Route path='cart' element={<Cart/>}>Cart</Route>
         <Route path='/' element={<ViewProducts/>}>View Products</Route>
         <Route path='register' element={<Register/>}>Register</Route>
-        <Route path='login' element={<Login/>}>Login</Route>
-        
-      </Routes>
+        <Route path='login' element={<Login/>}>Login</Route> 
+      </Routes> 
+      
 
-      <div className='links'>
+      
+        {/* <Link to='productitems'>Home</Link> */}
         <Link to='register'>Register</Link>
         <Link to='login'>Login</Link> 
-      </div>
-
+        <Link to='cart'>Cart</Link>
+     
+      
     </BrowserRouter>
 
     {/* <Login/> */}

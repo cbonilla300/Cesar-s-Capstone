@@ -55,7 +55,7 @@ const Register = () => {
             <form onSubmit={{handleSubmit}}></form>
               <div>
                 <label htmlFor="firstName">First Name:</label>
-                <input className="first-name"
+                <input className="firstname"
                 type="text"
                 id="firstName"
                 name="firstName"
@@ -65,7 +65,7 @@ const Register = () => {
               </div>
               <div>
                 <label htmlFor="lastName">Last Name:</label>
-                <input className="last-name"
+                <input className="lastname"
                 type="text"
                 id="lastName"
                 name="lastName"
